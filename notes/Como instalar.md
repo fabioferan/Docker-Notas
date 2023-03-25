@@ -1,15 +1,4 @@
-## Como instalar o Docker no Ubuntu 20.04
-
-Para instalar o Docker no Ubuntu 20.04, precisamos adicionar o repositório oficial do Docker ao nosso sistema e instalar o pacote docker-ce. Para isso, execute os seguintes comandos no terminal:
-
-```bash
-sudo apt update
-sudo apt install apt-transport-https ca-certificates curl software-properties-common
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
-sudo apt update
-sudo apt install docker-ce
-```
+# Como instalar
 
 ## Como instalar o Docker no Windows
 
@@ -24,3 +13,31 @@ Para instalar o Docker no Windows, você pode seguir os seguintes passos:
 Verifique se "Usar o mecanismo baseado em WSL 2" está marcado em Configurações > Gerais.
 
 Para instalar o Docker Engine for Windows, você precisa ter o Windows Server 2016 ou superior. Você pode baixar o instalador do Docker Engine for Windows no site do Docker e executá-lo usando um script PowerShell. Você também pode configurar o Docker Engine for Windows usando um arquivo de configuração em 'C:\ProgramData\Docker\config\daemon.json’.
+
+## Como instalar o Docker no Linux
+
+Existem várias formas de instalar o Docker no Linux, dependendo da sua distribuição e preferência. Uma forma simples é usar o snap, que é um sistema de gerenciamento de pacotes universal para Linux. Para isso, você precisa ter o snap instalado no seu sistema. Ele vem pré-instalado com a maioria das distribuições Linux, mas se não for encontrado, instale-o manualmente com o comando apropriado para o seu sistema operacional.
+
+Depois de ter o snap instalado, você pode instalar o Docker com o seguinte comando:
+
+```bash
+sudo snap install docker
+```
+
+Outra forma é usar o repositório oficial do Docker, que permite instalar e atualizar o Docker com o apt. Para isso, você precisa adicionar a chave GPG e o repositório do Docker ao seu sistema, seguindo os passos descritos no site oficial do Docker.
+
+```bash
+sudo apt update
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+```
+
+Depois de configurar o repositório, você pode instalar o Docker com o seguinte comando:
+
+```bash
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io
+```
+
+Há também outras formas de instalar o Docker no Linux, como usar um script bash, baixar um pacote binário ou usar um script de conveniência. Cada uma dessas formas tem suas vantagens e desvantagens, dependendo do seu caso de uso e necessidade.

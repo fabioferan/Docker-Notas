@@ -1,5 +1,5 @@
 
-## Arquivo .dockerignore
+# Arquivo .dockerignore
 
 Um arquivo `.dockerignore` é um arquivo de texto que especifica quais arquivos e diretórios devem ser ignorados ao copiar arquivos do seu sistema de arquivos local para a imagem Docker durante a construção. Ele funciona de maneira semelhante a um arquivo `.gitignore` usado com o Git.
 

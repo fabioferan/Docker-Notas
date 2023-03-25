@@ -1,4 +1,4 @@
-## Arquivo Dockerfile
+# Arquivo Dockerfile
 
 Para escrever um Dockerfile, você precisa criar um arquivo sem extensão chamado “Dockerfile” com o editor de sua preferência. Esse arquivo deve conter instruções para criar uma imagem Docker. Essas instruções devem seguir um formato específico, incluir comandos como `FROM` para especificar a imagem base, são executadas em ordem e incluem a instalação de pacotes, criação de diretórios e definição de variáveis de ambiente entre outras coisas. É como uma receita de bolo que o Docker segue para construir a imagem.
 
