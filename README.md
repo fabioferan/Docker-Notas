@@ -6,3 +6,4 @@ O Docker é uma ferramenta que permite gerenciar aplicações em contêineres, q
 * [Como instalar](notes/Como%20instalar.md)
 * [Arquivo Dockefile](notes/Arquivo%20Dockerfile.md)
 * [Arquivo .dockerignore](notes/Arquivo%20.dockerignore.md)
+* [Docker Hub](notes/Docker%20Hub.md)
